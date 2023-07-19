@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-weight: bold;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(0, 1%, 69%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article class="faq">
+      <div class="faq-illustration">
+        <picture class="illustration-woman">
+          <source media="(min-width: 800px)" srcset="./images/illustration-woman-online-desktop.svg">
+          <img class="illustration-desk" src="./images/illustration-woman-online-mobile.svg" alt="Woman Browsing">
+        </picture>
+
+      </div>
+      <div class="faq-content">
+        <h1>FAQ</h1>
+        <div class="accordian" id="faq-accordian">
+          <div class="accordian-panel">
+            <h2>
+              <button class="accordian-question" aria-expanded="true" aria-controls="ans1" id="que1">
+                <span class="accordian-title">How many team members can I invite?</span>
+                <span class="accordian-icon"><img src="images/icon-arrow-down.svg" /></span>
+              </button>
+            </h2>
+            <div class="accordian-answer" id="ans1" aria-hidden="false" role="region" aria-labelledby="que1">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </div>
+          </div>
+          <div class="accordian-panel">
+            <h2>
+              <button class="accordian-question" id="que2" aria-expanded="false" aria-controls="ans2">
+                <span class="accordian-title">What is the maximum file upload size?</span>
+                <span class="accordian-icon"><img src="images/icon-arrow-down.svg" /></span>
+              </button>
+            </h2>
+            <div class="accordian-answer" id="ans2" aria-hidden="true" role="region" aria-labelledby="que2">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </div>
+          </div>
+          <div class="accordian-panel">
+            <h2>
+              <button class="accordian-question" id="que3"  aria-expanded="false" aria-controls="ans3">
+                <span class="accordian-title"> How do I reset my password? </span><span class="accordian-icon"><img
+                    src="images/icon-arrow-down.svg" /></span>
+              </button>
+            </h2>
+            <div class="accordian-answer" id="ans3" aria-hidden="true" role="region" aria-labelledby="que3">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </div>
+          </div>
+          <div class="accordian-panel">
+            <h2>
+              <button class="accordian-question" id="que4" aria-expanded="false" aria-controls="ans4">
+                <span class="accordian-title">Can I cancel my subscription?</span>
+                <span class="accordian-icon"><img src="images/icon-arrow-down.svg" /></span>
+              </button>
+            </h2>
+            <div class="accordian-answer" id="ans4" aria-hidden="true" role="region" aria-labelledby="que4">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </div>
+          </div>
+          <div class="accordian-panel">
+            <h2>
+              <button class="accordian-question" id="que5" aria-expanded="false" aria-controls="ans5">
+                <span class="accordian-title">Do you provide additional support?</span><span class="accordian-icon"><img
+                    src="images/icon-arrow-down.svg" />
+                </span>
+              </button>
+            </h2>
+            <div class="accordian-answer" id="ans5" aria-hidden="true" role="region" aria-labelledby="que5">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
